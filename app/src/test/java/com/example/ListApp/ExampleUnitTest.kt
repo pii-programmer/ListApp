@@ -1,4 +1,4 @@
-package com.example.mvfvmr
+package com.example.ListApp
 
 import org.junit.Test
 
