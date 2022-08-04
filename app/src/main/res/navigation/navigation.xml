@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.ListApp.presentation.HomeFragment"
+        android:name="com.example.ListApp.presentation.fragments.HomeFragment"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_remote"
-        android:name="com.example.ListApp.presentation.RemoteFragment"
-        tools:layout="@layout/fragment_remote" />
+        android:id="@+id/navigation_category"
+        android:name="com.example.ListApp.presentation.fragments.CategoryFragment"
+        tools:layout="@layout/fragment_category" />
 
     <fragment
-        android:id="@+id/navigation_setting"
-        android:name="com.example.ListApp.presentation.SettingFragment"
-        tools:layout="@layout/fragment_setting" />
+        android:id="@+id/navigation_complete"
+        android:name="com.example.ListApp.presentation.fragments.CompleteFragment"
+        tools:layout="@layout/fragment_complete" />
 
 </navigation><!--ナビゲーションとは、ユーザーがアプリ内で移動できる場所間の移動のこと-->
-    <!--このnavigationファイルはnavGraphに格納される-->
-    <!--startDestinationを指定しないとデスティネーションの始まりが無いことになり、inflateの際androidx.fragment.app.FragmentContainerViewを見つけられなくなる-->
+    <!--このnavigationファイルはnavGraph属性に格納される-->
+    <!--startDestinationを指定しないとデスティネーションの始まりが無いことになり、inflateの際に、androidx.fragment.app.FragmentContainerViewを見つけられなくなる-->

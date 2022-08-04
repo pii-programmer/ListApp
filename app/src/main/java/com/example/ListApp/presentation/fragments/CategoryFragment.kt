@@ -1,20 +1,20 @@
-package com.example.ListApp.presentation
+package com.example.ListApp.presentation.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.ListApp.databinding.FragmentSettingBinding
+import com.example.ListApp.databinding.FragmentCategoryBinding
 
-class SettingFragment : Fragment() {
-    private lateinit var binding: FragmentSettingBinding
+class CategoryFragment : Fragment() {
+    private lateinit var binding: FragmentCategoryBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentSettingBinding.inflate(layoutInflater, container, false)
+        binding = FragmentCategoryBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 }

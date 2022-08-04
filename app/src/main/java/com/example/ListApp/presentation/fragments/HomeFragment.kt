@@ -1,4 +1,4 @@
-package com.example.ListApp.presentation
+package com.example.ListApp.presentation.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

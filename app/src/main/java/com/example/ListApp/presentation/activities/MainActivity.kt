@@ -1,10 +1,10 @@
-package com.example.ListApp
+package com.example.ListApp.presentation.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
+import com.example.ListApp.R
 import com.example.ListApp.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -20,16 +20,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun setNavigationBar() {
         // レイアウトのボトムナビゲーションオブジェクトを取得
-        val navView:BottomNavigationView = binding.navView
+//        val navView:BottomNavigationView = binding.navView
 
-        // レイアウトのnavHostFragment(デスティネーションの切り替えオブジェクト)を取得
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.myNavHostFragment) as NavHostFragment
+        // navHostFragment(デスティネーションの切り替えオブジェクト)を取得
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.myNavHostFragment) as NavHostFragment
         // 上記にコントローラー機能を付与
         val navController = navHostFragment.navController
 
         // ボトムナビゲーションの初期位置を設定
 
         // レイアウトのボトムナビゲーションをセットする
-        navView.setupWithNavController(navController)
+//        navView.setupWithNavController(navController)
     }
 }
